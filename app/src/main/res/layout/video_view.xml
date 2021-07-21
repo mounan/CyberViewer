@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoPlayerActivity">
+
+
+
+    <SurfaceView
+        android:id="@+id/video_view"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_height="251dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/video_view"
+        android:background="#2a3459"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/button_text_size"
+        android:paddingVertical="10sp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarTrackVertical="@color/teal_700"
+        android:scrollbars="vertical"
+        android:shadowColor="#cf1d1d"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/subtitles"
+        android:textAlignment="center"
+        android:textColor="#00ff9f"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginTop="-2dp"
+        android:background="#212946"
+        android:fontFamily="@font/cyberfont"
+        android:paddingHorizontal="@dimen/subtitle_text_size"
+        android:paddingVertical="10sp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarTrackVertical="@color/teal_700"
+        android:scrollbars="vertical"
+        android:shadowColor="#cf1d1d"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/objects"
+        android:textColor="#fe53bb"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/subtitle_text_size" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@+id/info_view"
+        android:layout_marginTop="-3dp"
+        android:background="#33135c"
+        android:fontFamily="@font/cyberfont"
+        android:paddingHorizontal="@dimen/subtitle_text_size"
+        android:paddingVertical="10sp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarTrackVertical="@color/teal_700"
+        android:scrollbars="vertical"
+        android:shadowColor="#01ffff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:text="@string/texts"
+        android:textColor="#01ffff"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/subtitle_text_size" />
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:textColor="#fe53bb"
+    android:background="#212946"
+    android:shadowColor="#cf1d1d"
+    android:shadowDx="0.0"
+    android:shadowDy="0.0"
+    android:shadowRadius="50">
+
+    <TextView
+        android:id="@+id/desc_view"
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:text="Cyber Viewer"
+        android:textSize="@dimen/desc_view_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textIsSelectable="true"
+        android:textColor="#fe53bb"
+        android:background="#212946"
+        android:shadowColor="#cf1d1d"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:fontFamily="@font/cyberfont"
+        />
+
+
+    <Button
+        android:id="@+id/select_source_button"
+        android:layout_width="wrap_content"
+        android:layout_height="133dp"
+        android:layout_below="@+id/desc_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="@string/select_video_source"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="#01ffff"
+        android:background="#33135c"
+        android:shadowColor="#01ffff"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="50"
+        android:fontFamily="@font/cyberfont"
+        />
+
+</RelativeLayout>
